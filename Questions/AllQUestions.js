@@ -544,8 +544,72 @@ else{
 count++
 }while(count<5)
 
-*/
 
+****************************************************************************************************************
+
+28  Accept an integer n and print the following pattern for n. 
+Example 1 : 
+Input:
+ Output:
+ n = 5
+ * 
+* * 
+* * * 
+* * * * 
+* * * * *
+ Example 2 : 
+Input:
+ Output:
+ n = 4
+ * 
+* * 
+* * * 
+* * * *
+
+let n = 12
+// let n = Number(prompt("Enter number"))
+for( let i =1 ; i<=n; i++){
+    let rows = ""
+   for( let j=1  ;j<=i ; j++){
+   rows += "* "
+   }
+   console.log(rows)
+}
+   *******************************************************************************************
+
+   29  Accept an integer n and print the following pattern for n. 
+Example 1 : 
+Input:
+ Output:
+ n = 5
+ 1
+ 1 2
+ 1 2 3
+ 1 2 3 4
+ 1 2 3 4 5
+
+ 
+let n =5
+for(let i=1;i<= n; i++){
+    let rows =""
+    for(let j=1 ; j<= i ; j++){
+        rows+= " "+j
+    }
+    console.log(rows)
+}
+    
+30 Accept an integer n and print the following pattern for n. 
+Example 1 : 
+Input:
+ Output:
+ n = 5
+ A 
+A B 
+A B C 
+A B C D 
+A B C D E
+
+*/
 
 
 

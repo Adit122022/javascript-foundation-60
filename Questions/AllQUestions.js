@@ -522,19 +522,29 @@ guesses the random number.
  Congrats. 
 Program exits.
 
-
+let count =0
 let a =Math.floor(Math.random()*100)
+do{
 console.log(a)
 let n =Number(prompt("Guess the number"))
 if(a ===n){
 alert("Congratulations")
-}else{
-    alert("Try again" \n Program exits )
+break;
 }
+else if(a > n){
+    alert("Too low, you have" + count + " guesses")
 
+}else if(a< n){
+    alert("Too high, you have" + count + " guesses")
+}
+else{
+    alert("Try again \n Program exits ")
+    break;
+}
+count++
+}while(count<5)
 
 */
-
 
 
 

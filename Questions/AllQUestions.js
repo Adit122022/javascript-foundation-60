@@ -761,19 +761,37 @@ a[0] = temp
 console.log(b)
 console.log(a)
 
-7.left rotation by k by user
-*/
+sceond approac not working 
 let a =[10,20,30,40,50];
 let b = [...a];
 let temp = a[a.length-1];
-for(let i=0; i>=a.length;i++){
-    a[i+1] = a[i]  
+for(let i=0; i>a.length;i++){
+    a[i] = a[i+1]  
 
 }
 a[0] = temp
 console.log(b)
 console.log(a)
 
+7.left rotation by k by user
+
+let a =[12,4,5,78,15,64];
+let b = [...a];
+let k=17
+k=k%a.length
+
+for(let j= 0 ; j<=k ; j++){
+    let temp = a[0];
+    for(let i=0; i<a.length;i++){
+        a[i] = a[i+1]  
+    }
+    a[a.length-1] = temp
+}
+
+console.log(b)
+console.log(a)
+
+*/
 
 
 

@@ -656,6 +656,22 @@ Input:
 // ---------------------------------------------------------------------------------------------
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ARRAYS: 
 //1. add digits of Array
  /* 
@@ -706,9 +722,48 @@ for(let i=2; i< a.length ;i++){
 }
 console.log(largest)
 console.log(min)
+
+4. ARRAY SORTED 
+let a =[12,4,5,78,15,64];
+let b = [...a];
+let temp = 0;
+for(let i=0; i<a.length;i++){
+    if(a[i] > a[i+1]){
+       temp =a[i]
+       a[i] = a[i+1]
+    a[i+1] = temp
+    }
+}
+console.log(b)
+console.log(a)
+
+5. Left rotation by 1 in array
+let a =[12,4,5,78,15,64];
+let b = [...a];
+let temp = a[0];
+for(let i=0; i<a.length;i++){
+    a[i] = a[i+1]  
+}
+a[a.length-1] = temp
+console.log(b)
+console.log(a)
+
+
+6.right rotation by 1 in array
+let a =[10,20,30,40,50];
+let b = [...a];
+let temp =a[a.length-1];
+for(let i=a.length-1; i>=0;i--){
+    a[i] = a[i-1]  
+
+}
+a[0] = temp
+console.log(b)
+console.log(a)
 */
 
-// let a = [10, 20, 30, 40, 50]
+
+
 
 
 

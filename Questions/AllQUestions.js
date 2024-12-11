@@ -777,17 +777,44 @@ console.log(a)
 
 let a =[12,4,5,78,15,64];
 let b = [...a];
-let k=17
-k=k%a.length
+let k=16
+let count=0
+k= k%a.length
+console.log(k)
 
-for(let j= 0 ; j<=k ; j++){
+for(let j= 1 ; j<=k ; j++){
     let temp = a[0];
     for(let i=0; i<a.length;i++){
         a[i] = a[i+1]  
+       
     }
+     count++
     a[a.length-1] = temp
 }
 
+console.log(count)
+console.log(a)
+
+8.right rotation by k by user
+
+let a =[12,4,5,78,15,64];
+let b = [...a];
+let k=3
+let count=0
+k= k%a.length
+console.log(k)
+
+for(let j= 1 ; j<=k ; j++){
+    let temp = a[a.length-1];
+    for(let i=a.length; i<0;i--){
+        a[i] = a[i-1]  
+       
+    }
+     count++
+    a[0] = temp
+}
+
+console.log(count)
 console.log(b)
 console.log(a)
 

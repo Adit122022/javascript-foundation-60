@@ -760,8 +760,19 @@ for(let i=a.length-1; i>=0;i--){
 a[0] = temp
 console.log(b)
 console.log(a)
-*/
 
+7.left rotation by k by user
+*/
+let a =[10,20,30,40,50];
+let b = [...a];
+let temp = a[a.length-1];
+for(let i=0; i>=a.length;i++){
+    a[i+1] = a[i]  
+
+}
+a[0] = temp
+console.log(b)
+console.log(a)
 
 
 

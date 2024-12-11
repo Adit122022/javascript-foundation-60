@@ -552,7 +552,7 @@ Example 1 :
 Input:
  Output:
  n = 5
- * 
+* 
 * * 
 * * * 
 * * * * 
@@ -561,7 +561,7 @@ Input:
 Input:
  Output:
  n = 4
- * 
+* 
 * * 
 * * * 
 * * * *
@@ -594,22 +594,123 @@ for(let i=1;i<= n; i++){
     let rows =""
     for(let j=1 ; j<= i ; j++){
         rows+= " "+j
-    }
+    }   
     console.log(rows)
 }
-    
+   
+********************************************************************************
+
 30 Accept an integer n and print the following pattern for n. 
 Example 1 : 
 Input:
  Output:
  n = 5
- A 
+A 
 A B 
 A B C 
 A B C D 
 A B C D E
 
+let n = 5 ;
+for(let i =1 ; i<=n ; i++){
+    let rows =""
+    for(let j=0 ; j< i;j++){
+        rows += String.fromCharCode(65+ j) + " "
+    }
+    console.log(rows)
+}
+ *******************************************************************************************
+31  Accept an integer n and print the following pattern for n. 
+Example 1 : 
+Input:
+ Output:
+ n = 5
+ * * * * * 
+* * * * 
+* * * 
+* *
+*
+
+let n =5
+for(let i =1; i<=n;i++){
+    let rows = ""
+    for(let j=1 ; j<= n-i+1 ; j++){
+        rows += "* "
+    }
+    console.log(rows)
+}
+
+********************************************************************************************
+
+ Accept an integer n and print the following pattern for n. 
+Example 1 : 
+Input:
+ Output:
+ n = 5
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * *
 */
+// ---------------------------------------------------------------------------------------------
+
+
+// ARRAYS: 
+//1. add digits of Array
+ /* 
+ let a =[]
+let size = Number(prompt("Enter a Size   :"))
+let sum = 0;
+for(let i = 0; i<size; i++){
+    a[i] = Number(prompt("Enter number : " + (i+1)))
+    sum += a[i]
+}
+console.log(sum)
+
+
+************************************************************************************
+
+2. find the largets number in an array
+
+let largest = a[0]
+for(let i=1; i< a.length ;i++){
+   if(largest < a[i] ){
+    largest = a[i]
+   }
+   else { }
+   
+}
+console.log(largest)
+
+
+
+************************************************************************
+3. second max number in array
+
+let a = [10, 20, 30, 40,5,65,4,68, 50]
+
+let largest = Math.max(a[0] , a[1])
+let min = Math.min(a[0] , a[1])
+console.log(largest)
+console.log(min)
+
+for(let i=2; i< a.length ;i++){
+    if(a[i]>largest){
+        min =largest;
+        largest = a[i]
+    }
+    else if(a[i]<min ){
+        min = a[i]
+    }
+}
+console.log(largest)
+console.log(min)
+*/
+
+// let a = [10, 20, 30, 40, 50]
+
+
 
 
 

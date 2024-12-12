@@ -795,6 +795,11 @@ for(let j= 1 ; j<=k ; j++){
 console.log(count)
 console.log(a)
 
+using block swap algorithm
+
+
+
+
 8.right rotation by k by user
 
 let a =[12,4,5,78,15,64];
@@ -818,7 +823,77 @@ console.log(count)
 console.log(b)
 console.log(a)
 
+*********************************************************
+ 9.reverse array
+ let arr=[10,20,30,40,50]
+let temp =[]
+let i=arr.length-1, j=0
+while(i>=0){
+    temp[j]= arr[i]
+    j++
+    i--
+}
+console.log(arr)
+console.log(temp)
+
+in this aprroch  spacComplexity is high
+
+this is one pointer algortihm
+let arr=[10,20,30,40,50,60]
+let i=0, j=arr.length-1
+while(i<j){
+  let temp = arr[i]
+    arr[i]= arr[j]
+    arr[j]=temp
+    j--
+    i++
+   
+}
+console.log(arr)
+
+10. shift all the negative values to right and positive values to left
+
+let a =[10,12,-5,-3,15,-8,13,-6]
+
+let i=0, j=0
+while(i<a.length){
+   if(a[i] < 0){
+   let  temp = a[i]
+     a[i]= a[j]
+     a[j]=temp
+       j++
+   }
+  
+    i++
+}
+console.log(a)
+
+
+*********************************************************************
+11 . u have an array of 0 and 1 and shift all the o to left and 1 to right
+
+let a =[0,1,0,0,1,0,1,1,0]
+
+let i=0, j=0
+while(i<a.length){
+   if(a[i] == 0){
+   let  temp = a[i]
+     a[i]= a[j]
+     a[j]=temp
+       j++
+   }
+  
+    i++
+}
+console.log(a)
+
+
+
 */
+
+
+
+
 
 
 

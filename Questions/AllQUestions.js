@@ -907,9 +907,25 @@ for( let i=0;i<a.length;i++){
 console.log(max)
 
 
+******************************************************
 
+13. Linear Search for elements in an array
 
+let arr=[10,20,45,15,17,12,18,60]
+
+let key = 15
+let key = Number(prompt("Number of elements to search "))
+let index=-1
+for(let i =0; i< arr.length;i++){
+    if(arr[i]==key){
+        index=i
+break;
+    }
+}
+if(index==-1) console.log("not Found ");
+else console.log("Value found on " ,index+1," postion that is  :",index," index")
 */
+
 
 
 

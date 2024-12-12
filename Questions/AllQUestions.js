@@ -876,7 +876,7 @@ let a =[0,1,0,0,1,0,1,1,0]
 
 let i=0, j=0
 while(i<a.length){
-   if(a[i] == 0){
+   if(a[i] <= 0){
    let  temp = a[i]
      a[i]= a[j]
      a[j]=temp
@@ -886,6 +886,24 @@ while(i<a.length){
     i++
 }
 console.log(a)
+
+
+12. take CONSICUTIVE ELEMENTS IN AN ARRAY
+
+let a =[0,1,1,1,1,0,1,1,0]
+
+
+let max =0
+let count=0
+for( let i=0;i<a.length;i++){
+ if(a[i] == 1)  count++
+ else{
+     max =Math.max(max,count)
+     count=0
+ }
+}
+
+console.log(max)
 
 
 

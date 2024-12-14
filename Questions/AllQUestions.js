@@ -928,30 +928,44 @@ else console.log("Value found on " ,index+1," postion that is  :",index," index"
 
 // longest sub array with sum k values
 
-let arr=[1, 4, 20, 3, 10, 5, 15]
-let k = 33
+// let arr=[1, 4, 20, 3, 10, 5, 15]
+// let k = 33
 
-let maxLen = 0
-let sum = 0
+// let maxLen = 0
+// let sum = 0
 
-let start = 0
+// let start = 0
 
-let map = new Map()
+// let map = new Map()
 
-for(let end = 0; end < arr.length; end++){
-    sum += arr[end]
-    if(sum == k){
-        maxLen = end - start + 1
-        start = end - maxLen + 1
-    }
-    else if(map.has(sum - k)){
-        maxLen = Math.max(maxLen, end - map.get(sum - k))
-    }
+// for(let end = 0; end < arr.length; end++){
+//     sum += arr[end]
+//     if(sum == k){
+//         maxLen = end - start + 1
+//         start = end - maxLen + 1
+//     }
+//     else if(map.has(sum - k)){
+//         maxLen = Math.max(maxLen, end - map.get(sum - k))
+//     }
 
-    else{
-        map.set(sum, end)
+//     else{
+//         map.set(sum, end)
+//     }
+// }
+
+// largest element in array
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let max = arr[0]
+
+for(let i = 1; i < arr.length; i++){
+    if(arr[i] > max){
+        max = arr[i]
     }
 }
+
+console.log("Largest element in array is : ", max)
 
 
 

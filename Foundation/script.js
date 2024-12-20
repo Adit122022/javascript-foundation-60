@@ -381,7 +381,7 @@
 
 
 // 26. Write a program to print the sum of all factors 
-// of a number .
+// of a number.
 // 
 
 

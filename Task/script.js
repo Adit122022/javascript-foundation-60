@@ -1,4 +1,4 @@
-// if-else:
+// if-else: 
 // 1. movie rating
 
 // let a = Number(prompt("Enter Rating (0.0 to 5.0)..."));
@@ -15,7 +15,7 @@
 //     alert("Invalid rating. Please enter a number between 0.0 and 5.0.");
 // }
 
-
+// ******************************************************************************************************
 // 2. profile based program
 
 // loop: 
@@ -43,17 +43,19 @@
 //         console.log("illigal ***************") 
 //     }
 // }
-
 // ***********************************************************************************
+
 // 4. HCF/GCD
 // let a =48
 // let b =72
 // while(a!=b){
-//     if(a>b) a=a-b;
-//     else b=b-a;
+//     if(a>b) a = a-b;
+//     else b = b-a;
 // }
 // console.log(a)
+
 // *******************************************************************************
+
 // 5. Harshad number
 // 6. perfect square
 // 7. Abundant number
@@ -122,7 +124,29 @@
  
 // let n=Number(prompt("Enter number"))
 
+// let arr = [5,8,10,12,16,17,35,40,55,75]
+// function BinorySearch(arr,se){
+//     while(start<=end){
+// let mid =Math.floor((start+end)/2)
+// if(arr[mid]==se) return mid
+// else if(arr[mid]> se) end =mid-1
+// else start = mid +1
+//     }
+//     return -1
+// }
 
+// let se =40
+// let index =BinorySearch(arr,se)
+// if(index == -1) console.log("NOT FOUND")
+//     else console.log("FOUND AT", index )
+
+let a =48
+let b =72
+while(a!=b){
+    if(a>b) a = a-b;
+    else b = b-a;
+}
+console.log(a)
 
 
 

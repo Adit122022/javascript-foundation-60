@@ -955,17 +955,37 @@ else console.log("Value found on " ,index+1," postion that is  :",index," index"
 
 // largest element in array
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-let max = arr[0]
+// let max = arr[0]
 
-for(let i = 1; i < arr.length; i++){
-    if(arr[i] > max){
-        max = arr[i]
-    }
-}
+// for(let i = 1; i < arr.length; i++){
+//     if(arr[i] > max){
+//         max = arr[i]
+//     }
+// }
 
-console.log("Largest element in array is : ", max)
+// console.log("Largest element in array is : ", max)
+
+
+// second largets element
+//  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+// let max = Math.max(arr[0],arr[1])
+// let sMax = Math.min(arr[0],arr[1])
+// for(let i=1;i<arr.length;i++){
+//   if(arr[i]>max){
+//     sMax = max
+//     max = arr[i]
+//   }else if(arr[i]>sMax && arr[i]< max){
+//     sMax =arr[i]
+//   }
+// }
+// console.log(max)
+// console.log(sMax)
+
+
 
 
 

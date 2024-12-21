@@ -986,7 +986,13 @@ else console.log("Value found on " ,index+1," postion that is  :",index," index"
 // console.log(sMax)
 
 // check if sorted or not  
-// let arr = [1, 2, 3, 4, 5,12,5, 6, 7, 8, 9, 10,10];let  isSorted = true;for(let i=1;i<arr.length;i++){if(arr[i]>arr[i+1]){ isSorted= false;  break}}console.log(` ${isSorted ? " Sorted " : "NOT SORTED"}`)
+// let arr = [1, 2, 3, 4, 5,12,5, 6, 7, 8, 9, 10,10];
+// let  isSorted = true;
+// for(let i=1;i<arr.length;i++){
+// if(arr[i]>arr[i+1]){ 
+// isSorted= false;  break;
+// }
+// }console.log(` ${isSorted ? " Sorted " : "NOT SORTED"}`)
 
 
 

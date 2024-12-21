@@ -68,14 +68,6 @@ for(let i=1;i<=n;i++){
 }
 console.log(result)
 
-second way 
-let n = Number(prompt("Enter the number"));
-let result = Array.from({ length: n }, (_, i) => {
-  i += 1; // To start from 1 instead of 0
-  return i % 15 === 0 ? "FizzBuzz" : i % 3 === 0 ? "Fizz" : i % 5 === 0 ? "Buzz" : i.toString();
-});
-console.log(result);
-
 */ 
 
 

@@ -994,6 +994,15 @@ else console.log("Value found on " ,index+1," postion that is  :",index," index"
 // }
 // }console.log(` ${isSorted ? " Sorted " : "NOT SORTED"}`)
 
+// right shift  element  in array
+// let arr = [1, 2, 9, 5,10];
+// let temp =arr[arr.length-1]
+// for(let i=arr.length-1; i>0;i--){
+//   arr[i] =arr[i-1]
+// }
+//   arr[0] = temp
+// console.log(arr)
+
 
 
 

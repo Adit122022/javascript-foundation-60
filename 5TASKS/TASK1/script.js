@@ -11,6 +11,7 @@ second way
 let [name, age, FvColor, city] = [prompt("Enter your name"), prompt("Enter your age"), prompt("Enter your Favorite color"), prompt("Enter your City")];
 alert(`Hello ${name}! You are ${age} years old, your favorite color is ${FvColor}, and you live in ${city}.`);
 
+***********************************************************************************************************
 2 
 first way
 let input = prompt("Enter number of minutes")
@@ -22,6 +23,7 @@ sceond way
 let input = prompt("Enter number of minutes");
 console.log(`Total hours: ${Math.floor(input / 60)} and ${input % 60} minutes`);
 
+*****************************************************************************************
 3 .
 first way
 let score =Number(prompt("Enter the score of the student"))
@@ -42,6 +44,7 @@ let grade = score > 90 ? "A" :
             score >= 35 ? "E" : "F";
 console.log(`You got ${grade} grade`);
 
+*********************************************************************************************
 
 4
 let a = Number(prompt("Enter the first number"));
@@ -56,6 +59,7 @@ let result = operation === "+" ? a + b :
 
 console.log(`Result: ${result}`);
 
+*********************************************************************************************
 5
 let n= Number(prompt("Enter the number"));
 let result =[]

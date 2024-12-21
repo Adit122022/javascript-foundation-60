@@ -21,5 +21,23 @@ while(true){
 
 ***************************************************************************
 3
+let num1 = Number(prompt("Enter number  : "))
+let num2 = Number(prompt("Enter number  : "))
+while(num2!==0){   let remainder =num1 % num2
+    num1 = num2
+    num2 =remainder
+}
+console.log("HCF is", num1)
 
+***************************************************************************
+
+4
+let num = Number(prompt("Enter number  : "))
+ while(num!==1){
+     if(num%2==0) num /=2
+     else num = (num*3) + 1
+     console.log(num)
+ }
+
+ ***************************************************************************
  */

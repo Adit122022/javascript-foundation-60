@@ -916,7 +916,7 @@ let arr=[10,20,45,15,17,12,18,60]
 let key = 15
 let key = Number(prompt("Number of elements to search "))
 let index=-1
-for(let i =0; i< arr.length;i++){
+for(let i = 0; i< arr.length;i++){
     if(arr[i]==key){
         index=i
 break;
@@ -924,87 +924,116 @@ break;
 }
 if(index==-1) console.log("not Found ");
 else console.log("Value found on " ,index+1," postion that is  :",index," index")
+
+**********************************************************************
+
+
+longest sub array with sum k values
+let arr = [1, 4, 20, 3, 10, 5, 15]
+let k = 33
+
+let maxLen = 0
+let sum = 0
+
+let start = 0
+
+let map = new Map()
+
+for(let end = 0; end < arr.length; end++){
+    sum += arr[end]
+    if(sum == k){
+        maxLen = end - start + 1
+        start = end - maxLen + 1
+    }
+    else if(map.has(sum - k)){
+        maxLen = Math.max(maxLen, end - map.get(sum - k))
+    }
+
+    else{
+        map.set(sum, end)
+    }
+}
+
+
+*********************************************************************
+largest element in array
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let max = arr[0]
+
+for(let i = 1; i < arr.length; i++){
+    if(arr[i] > max){
+        max = arr[i]
+    }
+}
+
+console.log("Largest element in array is : ", max)
+
+
+second largets element
+ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+let max = Math.max(arr[0],arr[1])
+let sMax = Math.min(arr[0],arr[1])
+for(let i=1;i<arr.length;i++){
+  if(arr[i]>max){
+    sMax = max
+    max = arr[i]
+  }else if(arr[i]>sMax && arr[i]< max){
+    sMax =arr[i]
+  }
+}
+console.log(max)
+console.log(sMax)
+
+********************************
+
+check if sorted or not  
+let arr = [1, 2, 3, 4, 5,12,5, 6, 7, 8, 9, 10,10];
+let  isSorted = true;
+for(let i=1;i<arr.length;i++){
+if(arr[i]>arr[i+1]){ 
+isSorted= false;  break;
+}
+}console.log(` ${isSorted ? " Sorted " : "NOT SORTED"}`)
+
+right shift  element  in array
+let arr = [1, 2, 9, 5,10];
+let temp =arr[arr.length-1]
+for(let i=arr.length-1; i>0;i--){
+  arr[i] =arr[i-1]
+}
+  arr[0] = temp
+console.log(arr)
+
+
+
+
+
+
+String 
+Q 1 REVERSE THE STRING AND PRINT IT CONTINUOUSLY 
+
+let str = prompt("enter your name :")
+let rev = ''
+for(let i=str.length-1; i>=0 ; i--){
+    rev= rev + str.charAt(i)
+}
+console.log(rev)
+******************************************************************************************************
+
+Q 2 PALINDROME OR NOT
+ let str = prompt("enter your name :")
+let str2 = ''
+for(let i=str.length-1; i >=0 ; i--){
+    str2= str2+str.charAt(i)
+}
+if(str === str2) console.log("true")
+else console.log("false")
+
 */
-
-// longest sub array with sum k values
-
-// let arr=[1, 4, 20, 3, 10, 5, 15]
-// let k = 33
-
-// let maxLen = 0
-// let sum = 0
-
-// let start = 0
-
-// let map = new Map()
-
-// for(let end = 0; end < arr.length; end++){
-//     sum += arr[end]
-//     if(sum == k){
-//         maxLen = end - start + 1
-//         start = end - maxLen + 1
-//     }
-//     else if(map.has(sum - k)){
-//         maxLen = Math.max(maxLen, end - map.get(sum - k))
-//     }
-
-//     else{
-//         map.set(sum, end)
-//     }
-// }
-
-// largest element in array
-
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-// let max = arr[0]
-
-// for(let i = 1; i < arr.length; i++){
-//     if(arr[i] > max){
-//         max = arr[i]
-//     }
-// }
-
-// console.log("Largest element in array is : ", max)
-
-
-// second largets element
-//  let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-
-// let max = Math.max(arr[0],arr[1])
-// let sMax = Math.min(arr[0],arr[1])
-// for(let i=1;i<arr.length;i++){
-//   if(arr[i]>max){
-//     sMax = max
-//     max = arr[i]
-//   }else if(arr[i]>sMax && arr[i]< max){
-//     sMax =arr[i]
-//   }
-// }
-// console.log(max)
-// console.log(sMax)
-
-// check if sorted or not  
-// let arr = [1, 2, 3, 4, 5,12,5, 6, 7, 8, 9, 10,10];
-// let  isSorted = true;
-// for(let i=1;i<arr.length;i++){
-// if(arr[i]>arr[i+1]){ 
-// isSorted= false;  break;
-// }
-// }console.log(` ${isSorted ? " Sorted " : "NOT SORTED"}`)
-
-// right shift  element  in array
-// let arr = [1, 2, 9, 5,10];
-// let temp =arr[arr.length-1]
-// for(let i=arr.length-1; i>0;i--){
-//   arr[i] =arr[i-1]
-// }
-//   arr[0] = temp
-// console.log(arr)
-
-
-
 
 
 

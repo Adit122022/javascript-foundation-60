@@ -1033,6 +1033,90 @@ for(let i=str.length-1; i >=0 ; i--){
 if(str === str2) console.log("true")
 else console.log("false")
 
+
+Q 3 check the vovwels and consonent and spacesin the  string 
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+first way
+let s = prompt("Enter string");
+let countSpace = 0, countNumber = 0, countVowels = 0;
+
+for (let i = 0; i < s.length; i++) {
+    switch (s.charAt(i)) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A': // Include uppercase vowels if needed
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+            countVowels++;
+            break;
+        case ' ': // Space character
+            countSpace++;
+            break;
+        case '0':
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+            countNumber++;
+            break;
+    }
+}
+
+console.log(`Vowels: ${countVowels}, Spaces: ${countSpace}, Numbers: ${countNumber}`);
+
+second case  
+
+let s = prompt("Enter string: ");
+let countVowels = 0, countSpace = 0, countNum = 0, countConsonant = 0;
+
+for (let i = 0; i < s.length; i++) {
+    let char = s.charAt(i).toLowerCase(); // Convert to lowercase to handle uppercase input
+    if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+        countVowels++;
+    } else if (char === ' ') {
+        countSpace++;
+    } else if (char >= '0' && char <= '9') { // Check if character is a digit
+        countNum++;
+    } else if (char >= 'a' && char <= 'z') { // Check if character is a consonant
+        countConsonant++;
+    }
+}
+
+console.log("Vowels: " + countVowels);
+console.log("Spaces: " + countSpace);
+console.log("Numbers: " + countNum);
+console.log("Consonants: " + countConsonant);
+  
+Thrid case 
+let s = prompt("Enter string   :")
+let countVowels =0 , countSpace = 0 , countNum = '0', countConsonent =0
+for (let i= 0 ; i<s.length; i++){
+    let char=s.charAt(i)
+    if(char== 'a' || char == 'e' || char =='i'|| char =='o'|| char =='u')  countVowels++
+    else if(char == ' ') countSpace++
+    else if(s.charCodeAt() >=48 && s.charCodeAt()<=57) countNum++
+    else countConsonent++
+}
+console.log("Vowels  :" + countVowels)
+console.log("Spaces  :" + countSpace)
+console.log("Number  :" + countNum)
+console.log("Consonent  :" + countConsonent)
+
+
+
+
 */
 
 

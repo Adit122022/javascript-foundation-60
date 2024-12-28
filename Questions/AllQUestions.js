@@ -1114,7 +1114,99 @@ console.log("Spaces  :" + countSpace)
 console.log("Number  :" + countNum)
 console.log("Consonent  :" + countConsonent)
 
+Q  4 . TOGGEL THE CHARACTERS 
 
+let s =prompt("Enter the string  :")
+let ans = ""
+ for(let i= 0 ; i<s.length ; i++){
+     if(s.charCodeAt(i) >= 65 && s.charCodeAt(i)<=96) {
+         ans += String.fromCharCode(s.charCodeAt(i) + 32)
+     }else if(s.charCodeAt(i) >= 97 && s.charCodeAt(i) <= 122){
+             ans += String.fromCharCode(s.charCodeAt(i) - 32)
+     }
+     
+ }
+ console.log(ans);
+
+ Q 5 count a valid number
+ 
+ let words = ["pay" , "attire" , "practice" , "attend " ,]
+let pref = "at"
+let str = []
+words.forEach(function(value,index){
+    if(value.startsWith(pref))   str+=(value + " ")
+})
+console.log(str)
+
+
+
+Q 6 split and change
+
+    let words = "Hello bhai kaise ho"
+    let str = words.split(" ")
+    str.map(function(value){
+        return console.log(value.charAt(0).toUpperCase()+value.substring(1) )
+    })
+
+Q 7 FREQUENCY OF CHARACTER 
+
+let s =prompt("Enter the string :")
+s= s.toLowerCase().trim()
+let arr = new Array(26).fill(0)
+for(let i=0; i<s.length; i++){
+    let asci = s.charCodeAt(i)
+    arr[asci-97]++
+    
+}
+for(let i=0; i<s.length;i++){
+    let char = s.charAt(i)
+    console.log(String.fromCharCode(i+97) + " : " +arr[i])
+
+
+
+    let s =prompt("Enter the string :")
+let s2 =prompt("Enter the string :")
+s= s.toLowerCase().trim()
+let arr = new Array(26).fill(0)
+let arr2 =new Array(26).fill(0)
+for(let i=0; i<s.length; i++){
+    let asci = s.charCodeAt(i)
+    arr[asci-97]++
+    }
+for(let i=0; i<arr.length;i++){
+    if(arr[i] > 0) console.log(String.fromCharCode(i+97) + " : " +arr[i])
+}
+
+    Q 8 check Anagrams 
+}
+let s = prompt("Enter the first string:");
+let s2 = prompt("Enter the second string:");
+s = s.toLowerCase().trim();
+s2 = s2.toLowerCase().trim();
+let arr = new Array(26).fill(0);
+let arr2 = new Array(26).fill(0);
+
+for (let i = 0; i < s.length; i++) {
+    let ascii = s.charCodeAt(i);
+        let ascii1 = s2.charCodeAt(i);
+    if (ascii1 >= 97 && ascii1 <= 122) arr2[ascii1 - 97]++;
+    if (ascii >= 97 && ascii <= 122)  arr[ascii - 97]++;
+}
+
+
+let isAnagram = true;
+for (let i = 0; i < 26; i++) {
+    if (arr[i] !== arr2[i]) {
+        isAnagram = false;
+        break;
+    }
+}
+
+if (isAnagram) {
+    console.log(`\"${s}\" and \"${s2}\" are anagrams.`);
+} else {
+    console.log(`\"${s}\" and \"${s2}\" are not anagrams.`);
+}
 
 
 */

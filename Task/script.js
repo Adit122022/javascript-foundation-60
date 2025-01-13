@@ -140,13 +140,76 @@
 // if(index == -1) console.log("NOT FOUND")
 //     else console.log("FOUND AT", index )
 
-let a =48
-let b =72
-while(a!=b){
-    if(a>b) a = a-b;
-    else b = b-a;
+// let a =48
+// let b =72
+// while(a!=b){
+//     if(a>b) a = a-b;
+//     else b = b-a;
+// }
+// console.log(a)
+
+
+// Multi-Dimensional Array
+// two d array
+//hard coded
+// let arr=[  [1,2,3,4]  ,[5,6,7,8]   ,[10,11,12]   ];
+// for(let i=0;i<arr.length;i++)  for(let j=0;j<arr[i].length;j++)  process.stdout.write("  -  "+arr[i][j])  //const elem = arr/flat()
+
+// Dyanmic
+// let rows =Number(prompt("Enter the size of rows :")) ,col=Number(prompt("Enter cols :"))
+// let arr =Array.from({length :rows} , ()=>Array(col).fill(0))
+//  for(let i=0;i<arr.length;i++)  for(let j=0;j<arr[i].length;j++)  process.stdout.write("  -  "+arr[i][j])  //const elem = arr/flat()
+//       process.stdout.write("Enter the numbers : ")
+//     for(let i=0;i<arr.length;i++)  for(let j=0;j<arr[i].length;j++)  arr[i][j] =Number(prompt(","))
+
+// console.log(arr)
+
+
+// JACKED ARRAY
+//  let rows =Number(prompt("Enter the size of rows :")) ;
+//  let arr = new Array(rows)
+//  for(let i=0;i<arr.length;i++ ) {
+//      let col=Number(prompt("Enter cols :"))
+//      arr[i] = new Array(col)
+//  }
+//  for(let i=0;i<arr.length;i++)  for(let j=0;j<arr[i].length;j++)  arr[i][j] = Number(prompt("Enter Numbers :"))
+ 
+//  console.log(arr)
+
+// let rows =Number(prompt("Enter the size of rows :")) ,col=Number(prompt("Enter cols :"));
+// let arr =  Array.from({length :rows},()=>Array(col).fill(0))
+//  process.stdout.write("Enter the numbers : ")
+
+
+
+//     for(let i=0;i<arr.length;i++)  for(let j=0;j<arr[i].length;j++)  arr[i][j] =Number(prompt(","))
+//     console.log(arr)
+    
+// for(let i=0;i<arr.length;i++)  for(let j=0;j<arr[i].length;j++)  if(i==j || i+j==arr.length-1) process.stdout.write(" "+arr[i][j])
+
+
+
+
+
+// Array Practice :   4 janauary 2025 
+/* Q find the frequency of array elements  , dont count -1
+let arr =[5,8,1,2,5,6,8,8,6,6,3,4,4]
+
+for(let i=0 ; i<arr.length ; i++){
+    let count = 1
+    for(let j=i+1 ; j < arr.length;j++){
+        if(arr[i] == arr[j]) { 
+        arr[j] = -1
+        count ++
+        }
+    }
+    { arr[i] > 0 ? console.log(arr[i]  , " - >" , count) : " "}
 }
-console.log(a)
+*/
+ 
+ 
+
+
 
 
 

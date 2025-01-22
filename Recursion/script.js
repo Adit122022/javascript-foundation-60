@@ -75,4 +75,66 @@ function reverse(a ,b = 0){
 }
 console.log(reverse(a))
 
+
+*****************************************************************************
+* Q8 fibonachinumber 
+let a =Number(prompt("Enter number :"))
+function fibo(n) {
+    if (n==0||n==1) return n;  
+  return fibo(n-1)   + fibo(n-2)
+}
+  console.log(fibo(a)); 
+**********************************************************************
+Q9 fibonachi series  print
+let a =Number(prompt("Enter number :"))
+function fibo(n ,a=0,b=1 ) {
+    if (n===0) return;  
+     console.log(a); 
+    fibo(n-1, b, a + b,);  
+}
+fibo(a); 
+
+Q10 GCD 
+
+Euclidean algorithm
+        const gcd =(a,b) =>{
+            if(b === 0) return a;
+            return gcd(b, a % b)   
+        }
+        console.log(gcd(20,32));
+
+ ANOTHER WAY TO SOLVE THIS 
+        let a = 20, b = 32;
+        let c = Math.min(a,b);
+        const gcd = (a, b ,c) => {
+            if(c === 0) return 1;
+            if(a% c ===0 || b % c ===0) return gcd(a , b , c -1)
+            }
+        console.log(gcd(a,b,c));
+
+Another way to solve this 
+        let a = 20, b = 32; 
+        const gcd =(a,b){
+        if(a==b) return a
+        if(a > b) return gcd(a-b,b)
+        return gcd(a,b-a)
+        }
+        console.log(gcd(a,b))
+
+
+*****************************************************************
+
+Q11   Print the factors of a number 
+
+const n =10;
+const factor =(n,i=1)=>{
+    if(n%i === 0) console.log(i)
+    if(i> Math.floor(n/2)) {
+        console.log(n); 
+        return }
+  factor(n,i+1)
+}
+factor(n)
+
  */
+

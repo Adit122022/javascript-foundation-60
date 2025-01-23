@@ -153,4 +153,5 @@ Q12
 let n=30;
 let i =0;
     for(i=1;i*i<n;i++) if(n%i==0) console.log(i);
+    if((i-n/i) ==1) i--;
     for( ; i>=1 ; i-- )     if(n%i==0) console.log(n/i);

@@ -76,7 +76,7 @@ function reverse(a ,b = 0){
 console.log(reverse(a))
 
 
-*****************************************************************************
+*****************************************************************************  date 22-01-2025
 * Q8 fibonachinumber 
 let a =Number(prompt("Enter number :"))
 function fibo(n) {
@@ -136,5 +136,21 @@ const factor =(n,i=1)=>{
 }
 factor(n)
 
+// sqrt of n tak chalaya but sorted nahi aa ra hai abhi bhi   
+for(let i= 1 ; i<(Math.sqrt(n)) ; i++) {
+    if(n % i === 0) {
+        if(i==n/i) console.log(n/i);
+        else {
+        console.log(i, n/i);
+    }
+    }}
+//  sqrt  tak chalaya  and sorted bhi hai 
+
+************************************************************************************* date 23-01-2025
+Q12  
  */
 
+let n=30;
+let i =0;
+    for(i=1;i*i<n;i++) if(n%i==0) console.log(i);
+    for( ; i>=1 ; i-- )     if(n%i==0) console.log(n/i);

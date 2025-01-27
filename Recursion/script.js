@@ -145,13 +145,75 @@ for(let i= 1 ; i<(Math.sqrt(n)) ; i++) {
     }
     }}
 //  sqrt  tak chalaya  and sorted bhi hai 
+let n=30;
+let i =0;
+    for(i=1;i*i<n;i++) if(n%i==0) console.log(i);
+    // if((i-n/i) ==1) i--;   // for special case where n is not a perfect square and n is a even 
+    for( ; i>=1 ; i-- )     if(n%i==0) console.log(n/i);
 
 ************************************************************************************* date 23-01-2025
 Q12  
  */
 
-let n=30;
-let i =0;
-    for(i=1;i*i<n;i++) if(n%i==0) console.log(i);
-    if((i-n/i) ==1) i--;
-    for( ; i>=1 ; i-- )     if(n%i==0) console.log(n/i);
+/*
+// prime Number
+let a =9
+
+let count = 0
+
+if(a==1) console.log("number is not prime")
+ for(let i =1; i<=a ;i++)    if(a % i == 0)       count++;  
+ if(count == 2) console.warn(`${a} is a prime number`)
+    else console.warn(`${a} is not a prime number`)
+
+//   if u want to check the number is prime or not ...? then u need to check the  factor or the number  from 1 to n/2 
+let a =2
+let count = 0
+if(a==1) console.log("number is not prime")
+ for(let i =1; i<=a/2 ;i++)    if(a % i == 0)       count++;  
+ if(count == 1) console.warn(`${a} is a prime number`)
+    else console.warn(`${a} is not a prime number`)
+
+*/ 
+// let a = 37;
+// const isPrime=() =>{
+//     if(a<=1) return false
+//     if(a==2) return true
+//     if(a % 2 == 0) return false
+//  for(let i=3;i<=Math.floor(Math.sqrt(a));i+=2) {
+//     if(a % i == 0) return false;
+//     return false;
+//  }
+// }
+// console.log(isPrime(a));
+
+
+//  another way to solve this  -> not completed 
+// let count = 0
+// if(a==1 || a==2) console.log("number isprime")
+// else {
+//     for(let i = 3; i<=Math.floor(Math.sqrt(a)) ;i++)    if(a % i != 0) count++;  
+//     if(count != 0) console.warn(`${a} is  a prime number`)
+//     else console.warn(`${a} is not  a prime number`)
+// }
+
+//  another way to solve this using recursion  Sieve of Eratosthenes
+// 
+// let a =30;
+// let arr = new Array(a+1).fill(true);
+// for(let i =2; i*i<=a ;i++) {
+//     if(arr[i]) {
+//         for(let j = i*i ; j<=a ; j+=i) {
+//             arr[j] = false;
+//         }
+//     }
+// }
+
+// for(let i =2; i<=a ;i++) {
+//     if(arr[i]) console.log(i);
+// }
+
+
+  
+
+

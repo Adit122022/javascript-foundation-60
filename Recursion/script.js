@@ -201,17 +201,9 @@ if(a==1) console.log("number is not prime")
 // 
 // let a =30;
 // let arr = new Array(a+1).fill(true);
-// for(let i =2; i*i<=a ;i++) {
-//     if(arr[i]) {
-//         for(let j = i*i ; j<=a ; j+=i) {
-//             arr[j] = false;
-//         }
-//     }
-// }
+// for(let i =2; i*i<=a ;i++)  if(arr[i])  for(let j = i*i ; j<=a ; j+=i)   arr[j] = false;
+// for(let i =2; i<=a ;i++)    if(arr[i]) console.log(i);
 
-// for(let i =2; i<=a ;i++) {
-//     if(arr[i]) console.log(i);
-// }
 
 
   

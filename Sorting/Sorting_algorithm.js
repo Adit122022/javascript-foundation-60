@@ -45,28 +45,26 @@ for (let i = 0; i<arr.length-1 ;i++)  for(let j= 0 ; j< arr.length-1-i ; j++)  i
  MERGE SORT 
  */
 let arr =[7,4,3,5,8,9]
+divide(arr,0,arr.length-1)
 
-function merge(left, right){
-    let result = []
-    while(left.length && right.length){
-        if(left[0] < right[0]){
-            result.push(left.shift())
-        }else{
-            result.push(right.shift())
-        }
+function divide(arr,first,last){
+    if(first<last){
+        let mid = Math.floor((first+last)/2)
+        divide(arr,first,mid)
+        divide(arr,mid+1,last)
+        conquer(arr,first,mid,last)
     }
-    return [...result,...left,...right]
 }
 
-function mergeSort(arr){
-    if(arr.length <= 1) return arr
-    let mid = Math.floor(arr.length/2)
-    let left = arr.slice(0,mid)
-    let right = arr.slice(mid)
-    return merge(mergeSort(left), mergeSort(right))
+function conquer(arr,first,mid,last){
+    let temp = new Array(last-first+1)
+    let i = first, j = mid+1, k = 0;
+    while(i<=mid && j<=last){  
+        if(arr[i] <= arr[j]) temp[k++] = arr[i++];
+        else temp[k++] = arr[j++];
+    }
+    while(i<=mid) temp[k++] = arr[i++]; 
+    while(j<=last) temp[k++] = arr[j++];
+    for(let i=0; i<temp.length; i++) arr[first+i] = temp[i];
 }
-
-console.log(mergeSort(arr))
-
-
-
+console.log(arr)

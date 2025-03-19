@@ -43,8 +43,8 @@ for (let i = 0; i<arr.length-1 ;i++)  for(let j= 0 ; j< arr.length-1-i ; j++)  i
 
 
  MERGE SORT 
- */
-let arr =[7,4,3,5,8,9]
+
+ let arr =[7,4,3,5,8,9]
 divide(arr,0,arr.length-1)
 
 function divide(arr,first,last){
@@ -68,3 +68,8 @@ function conquer(arr,first,mid,last){
     for(let i=0; i<temp.length; i++) arr[first+i] = temp[i];
 }
 console.log(arr)
+ */
+
+
+    
+let arr = [7, 4, 3, 5, 8, 9]

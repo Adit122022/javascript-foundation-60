@@ -35,7 +35,7 @@
 
 //   Implementation of stack using linked list  
 
-
+/*
 class Node {
     constructor(data) {
         this.data = data;
@@ -98,3 +98,40 @@ console.log(stack.peek());
 console.log('===================================='); // 10
 
 console.log(stack.size); // 4
+
+*/
+
+//   Implementing stack using array
+ class Stack{
+    constructor() {
+        this.stack = [];
+    }
+    push(data) {
+        this.stack.push(data);
+    }
+    pop(){
+        if(this.stack.length === 0) return console.log("Stack is empty");
+        return this.stack.pop();
+    }
+    peek(){
+        if(this.stack.length === 0) return console.log("Stack is empty");
+        return this.stack[this.stack.length - 1];
+    }
+    display(){
+        if(this.stack.length === 0) return console.log("Stack is empty");
+        console.log(this.stack.reverse().join(" --> "));
+    }
+ }
+
+ let stack = new Stack();
+ stack.push(10);
+ stack.push(20);
+ stack.push(30);
+ stack.push(40);
+ stack.display(); // 40 --> 30 --> 20 --> 10
+ console.warn('====================================');
+ stack.pop();
+ stack.display(); // 40 --> 30 --> 20
+ console.warn('====================================');
+ console.log(stack.peek()); // 40
+ console.warn('===================================='); 

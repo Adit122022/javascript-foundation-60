@@ -66,6 +66,8 @@ class Stack{
             return null;}
         return this.top.data;
     }
+        isEmpty(){
+        return this.size === 0;}
     display(){
         if(this.top === null) return console.log("Stack is empty");
         let temp = this.top ;
